@@ -33,8 +33,8 @@ function App() {
       callSetTimeout();
     } else if (userClicked === 1 && computerClicked === 2) {
       setcomputerPoint(computerPoint + 1);
-      setcomputerImage(`image${computerClicked}`);
-      setuserImage(`image${userClicked}`);
+      setcomputerImage(`img${computerClicked}`);
+      setuserImage(`img${userClicked}`);
       setuserWin(false);
       setbothSame(false);
       setpickedOne(true);
