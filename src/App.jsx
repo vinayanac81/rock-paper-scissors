@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./App.css";
+import img3 from "./images/image3.jpg"
+import img2 from "./images/image2.jpg"
+import img1 from "./images/image1.jpg"
 import toast, { Toaster } from "react-hot-toast";
 function App() {
   const [userWin, setuserWin] = useState(false);
@@ -60,8 +63,8 @@ function App() {
       callSetTimeout();
     } else if (computerClicked === 1 && userClicked === 2) {
       setuserPoint(userPoint + 1);
-      setcomputerImage(`image${computerClicked}`);
-      setuserImage(`image${userClicked}`);
+      setcomputerImage(`img${computerClicked}`);
+      setuserImage(`imag${userClicked}`);
       setuserWin(true);
       setbothSame(false);
       setpickedOne(true);
@@ -152,7 +155,7 @@ function App() {
             <div className=" w-1/3">
               <img
                 onClick={() => handleClick(1)}
-                src="../public/images/image1.jpg"
+                src={img1}
                 className="h-80 rounded cursor-pointer"
                 alt=""
               />
@@ -160,7 +163,7 @@ function App() {
             <div className=" w-1/3  ">
               <img
                 onClick={() => handleClick(2)}
-                src="../public/images/image2.jpg"
+                src={img2}
                 className="h-80 rounded cursor-pointer"
                 alt=""
               />{" "}
@@ -168,7 +171,7 @@ function App() {
             <div className="  w-1/3">
               <img
                 onClick={() => handleClick(3)}
-                src="../public/images/image3.jpg"
+                src={img3}
                 className="h-80 rounded cursor-pointer"
                 alt=""
               />
