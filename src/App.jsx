@@ -63,8 +63,8 @@ function App() {
       callSetTimeout();
     } else if (computerClicked === 1 && userClicked === 2) {
       setuserPoint(userPoint + 1);
-      setcomputerImage(`img${computerClicked}`);
-      setuserImage(`img${userClicked}`);
+      setcomputerImage(`${computerClicked}`);
+      setuserImage(`${userClicked}`);
       setuserWin(true);
       setbothSame(false);
       setpickedOne(true);
@@ -93,6 +93,8 @@ function App() {
       callSetTimeout();
     }
   };
+  console.log(userImage);
+
   return (
     <>
       <Toaster />
@@ -108,7 +110,17 @@ function App() {
               <div className="w-1/4 px-20 pt-10 text-center">
                 <h2 className="text-white border">USER SELECTED</h2>
                 <div className="flex justify-center pt-5">
-                  <img className="w-20" src={userImage} alt="" />
+                  <img
+                    className="w-20"
+                    src={
+                      userImage === "img1"
+                        ? img1
+                        : userImage === "img2"
+                        ? img2
+                        : img3
+                    }
+                    alt=""
+                  />
                 </div>
                 <div className="w-full flex justify-center text-center">
                   <div className="w-16 pt-6">
@@ -178,7 +190,17 @@ function App() {
               <div className="w-1/4 px-20 pt-10 text-center">
                 <h2 className="text-white border">COMPUTER SELECTED</h2>
                 <div className="flex justify-center pt-5">
-                  <img className="w-20" src={computerImage} alt="" />
+                  <img
+                    className="w-20"
+                    src={
+                      computerImage === "img1"
+                        ? img1
+                        : computerImage === "img2"
+                        ? img2
+                        : img3
+                    }
+                    alt=""
+                  />
                 </div>
                 <div className="w-full flex justify-center text-center">
                   <div className="w-16 pt-6">
