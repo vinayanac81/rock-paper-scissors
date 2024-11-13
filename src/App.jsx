@@ -24,8 +24,8 @@ function App() {
     let computerClicked = Math.floor(Math.random() * 3) + 1;
     if (userClicked === computerClicked) {
       setbothSame(true);
-      setcomputerImage(`image${computerClicked}`);
-      setuserImage(`image${userClicked}`);
+      setcomputerImage(`img${computerClicked}`);
+      setuserImage(`img${userClicked}`);
       setuserWin(false);
       setpickedOne(true);
       setresultSee(true);
@@ -43,8 +43,8 @@ function App() {
       callSetTimeout();
     } else if (userClicked === 2 && computerClicked === 3) {
       setcomputerPoint(computerPoint + 1);
-      setcomputerImage(`image${computerClicked}`);
-      setuserImage(`image${userClicked}`);
+      setcomputerImage(`img${computerClicked}`);
+      setuserImage(`img${userClicked}`);
       setuserWin(false);
       setbothSame(false);
       setpickedOne(true);
@@ -53,8 +53,8 @@ function App() {
       callSetTimeout();
     } else if (userClicked === 3 && computerClicked === 1) {
       setcomputerPoint(computerPoint + 1);
-      setcomputerImage(`image${computerClicked}`);
-      setuserImage(`image${userClicked}`);
+      setcomputerImage(`img${computerClicked}`);
+      setuserImage(`img${userClicked}`);
       setuserWin(false);
       setbothSame(false);
       setpickedOne(true);
@@ -64,7 +64,7 @@ function App() {
     } else if (computerClicked === 1 && userClicked === 2) {
       setuserPoint(userPoint + 1);
       setcomputerImage(`img${computerClicked}`);
-      setuserImage(`imag${userClicked}`);
+      setuserImage(`img${userClicked}`);
       setuserWin(true);
       setbothSame(false);
       setpickedOne(true);
@@ -73,8 +73,8 @@ function App() {
       callSetTimeout();
     } else if (computerClicked === 2 && userClicked === 3) {
       setuserPoint(userPoint + 1);
-      setcomputerImage(`image${computerClicked}`);
-      setuserImage(`image${userClicked}`);
+      setcomputerImage(`img${computerClicked}`);
+      setuserImage(`img${userClicked}`);
       setuserWin(true);
       setbothSame(false);
       setpickedOne(true);
@@ -83,8 +83,8 @@ function App() {
       callSetTimeout();
     } else {
       setuserPoint(userPoint + 1);
-      setcomputerImage(`image${computerClicked}`);
-      setuserImage(`image${userClicked}`);
+      setcomputerImage(`img${computerClicked}`);
+      setuserImage(`img${userClicked}`);
       setuserWin(true);
       setbothSame(false);
       setpickedOne(true);
