@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import img3 from "./images/image3.jpg"
-import img2 from "./images/image2.jpg"
-import img1 from "./images/image1.jpg"
+import img3 from "./images/image3.jpg";
+import img2 from "./images/image2.jpg";
+import img1 from "./images/image1.jpg";
 import toast, { Toaster } from "react-hot-toast";
 function App() {
   const [userWin, setuserWin] = useState(false);
@@ -108,11 +108,7 @@ function App() {
               <div className="w-1/4 px-20 pt-10 text-center">
                 <h2 className="text-white border">USER SELECTED</h2>
                 <div className="flex justify-center pt-5">
-                  <img
-                    className="w-20"
-                    src={`../public/images/${userImage}.jpg`}
-                    alt=""
-                  />
+                  <img className="w-20" src={userImage} alt="" />
                 </div>
                 <div className="w-full flex justify-center text-center">
                   <div className="w-16 pt-6">
@@ -182,11 +178,7 @@ function App() {
               <div className="w-1/4 px-20 pt-10 text-center">
                 <h2 className="text-white border">COMPUTER SELECTED</h2>
                 <div className="flex justify-center pt-5">
-                  <img
-                    className="w-20"
-                    src={`../public/images/${computerImage}.jpg`}
-                    alt=""
-                  />
+                  <img className="w-20" src={computerImage} alt="" />
                 </div>
                 <div className="w-full flex justify-center text-center">
                   <div className="w-16 pt-6">
